@@ -1,0 +1,196 @@
+/* Container styling */
+.container {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  /* Back button styling */
+  .container button {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .container button:hover {
+    background: #2575fc;
+  }
+  
+  /* Question title */
+  .container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  /* Question instructions */
+  .question-section p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  /* MCQ options */
+  /* .question-section div {
+    margin-bottom: 10px;
+  }
+  
+  .question-section input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  .question-section label {
+    font-size: 14px;
+    color: #444;
+  } */
+  
+  /* Wrapper for MCQ options */
+.question-section div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Custom radio button styling */
+  .question-section input[type="radio"] {
+    appearance: none; /* Remove default radio button */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #007bff; /* Blue border */
+    margin-right: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Inner circle for custom radio */
+  .question-section input[type="radio"]:checked {
+    background-color: #007bff; /* Blue background on check */
+    border-color: #007bff;
+  }
+  
+  .question-section input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white; /* Inner circle color */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Label styling */
+  .question-section label {
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect on label */
+  .question-section div:hover label {
+    color: #007bff;
+    transform: scale(1.05); /* Slight scaling on hover */
+  }
+  
+  /* Styling for the whole option on hover */
+  .question-section div:hover input[type="radio"] {
+    border-color: #007bff;
+    transform: scale(1.2); /* Slightly enlarge the radio button */
+  }
+  
+  /* Disabled option styling */
+  .question-section div.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  .question-section div.disabled label {
+    color: #aaa;
+  }
+  
+  /* Anagram block container */
+  .block-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .block-container span {
+    background: #eef;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Anagram input */
+  .block-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Submit button */
+  .question-section button {
+    background: #34a853;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.2s;
+  }
+  
+  .question-section button:hover {
+    background: #2c8f48;
+    transform: scale(1.05);
+  }
+  
+  /* Correct or wrong answer feedback */
+  .question-section p {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  
+  .question-section p:nth-of-type(2) {
+    color: #d32f2f; /* Wrong answer feedback */
+  }
+  
+  .question-section p:nth-of-type(2):last-of-type {
+    color: #388e3c; /* Correct answer feedback */
+  }
+  
+  /* Loading text */
+  .container p {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+  }
+  

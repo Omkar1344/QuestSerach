@@ -1,0 +1,81 @@
+/* Wrapper for SearchBar */
+.search-bar-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  
+  /* Search form styling */
+  .search-bar-wrapper form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+  }
+  
+  /* Input field styling */
+  .search-bar-wrapper input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  /* Focus effect for input */
+  .search-bar-wrapper input:focus {
+    background: #ffffff;
+    border: 1px solid #007bff;
+    /* box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); */
+    box-shadow: 0 0 5px #A594F9;
+  }
+  
+  /* Search button styling */
+  .search-bar-wrapper button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    /* background: #007bff; */
+    background: #A594F9;
+    /* background: #795757; */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for button */
+  .search-bar-wrapper button:hover {
+    background: #0056b3;
+    
+    transform: scale(1.05);
+  }
+  
+  /* Adjustments for mobile responsiveness */
+  @media (max-width: 768px) {
+    .search-bar-wrapper form {
+      padding: 8px 15px;
+      gap: 8px;
+    }
+  
+    .search-bar-wrapper input {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    .search-bar-wrapper button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  

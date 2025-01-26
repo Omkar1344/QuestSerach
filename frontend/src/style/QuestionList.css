@@ -1,0 +1,65 @@
+/* Wrapper styling for QuestionList */
+.question-list-wrapper {
+    font-family: 'Arial', sans-serif;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Message for no questions */
+  .question-list-wrapper p {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  
+  /* Question container as a card */
+  .question-list-wrapper .question-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px; /* Rounded corners for card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for question card */
+  .question-list-wrapper .question-item:hover {
+    background: #e6f7ff; /* Light blue background on hover */
+    transform: translateY(-5px); /* Slight upward movement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow for emphasis */
+  }
+  
+  /* Question title styling */
+  .question-list-wrapper .question-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+  
+  /* Question type or description */
+  .question-list-wrapper .question-item p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+  }
+  
+  /* Additional styling for responsiveness and spacing */
+  @media (max-width: 768px) {
+    .question-list-wrapper {
+      padding: 15px;
+      max-width: 100%;
+    }
+    .question-list-wrapper .question-item {
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+  }
+  
